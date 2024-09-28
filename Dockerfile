@@ -1,5 +1,7 @@
 FROM tensorflow/serving:latest
- 
+
+RUN pip install --upgrade pip
+
 COPY ./output/serving_model /models/cc-model
 COPY ./config /model_config
 ENV MODEL_NAME=cc-model
