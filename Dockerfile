@@ -1,4 +1,4 @@
-FROM tensorflow/serving:latest
+FROM tensorflow/serving:2.7.0
  
 COPY ./output/serving_model /models/cc-model
 COPY ./config /model_config
