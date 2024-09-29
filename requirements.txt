@@ -227,7 +227,7 @@ mistune==0.8.4
 mizani==0.11.4
 mkl==2024.2.2
 ml-dtypes==0.3.2
-ml-pipelines-sdk==1.15.1
+ml-pipelines-sdk
 mlxtend==0.23.1
 more-itertools==10.5.0
 moviepy==1.0.3
