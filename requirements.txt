@@ -116,8 +116,6 @@ fsspec==2024.6.1
 future==1.0.0
 gast==0.6.0
 gcsfs==2024.6.1
-GDAL==3.6.4
-gdown==5.2.0
 geemap==0.34.3
 gensim==4.3.3
 geocoder==1.38.1
@@ -217,8 +215,6 @@ locket==1.0.0
 logical-unification==0.4.6
 lxml==4.9.4
 marisa-trie==1.2.0
-Markdown==3.7
-markdown-it-py==3.0.0
 MarkupSafe==2.1.5
 matplotlib==3.7.1
 matplotlib-inline==0.1.7
