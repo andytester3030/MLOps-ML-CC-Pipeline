@@ -13,3 +13,5 @@ tensorflow_model_server --port=8500 --rest_api_port=${PORT} \
 --monitoring_config_file=${MONITORING_CONFIG} \
 "$@"' > /usr/bin/tf_serving_entrypoint.sh \
 && chmod +x /usr/bin/tf_serving_entrypoint.sh
+
+CMD ["/usr/bin/tf_serving_entrypoint.sh"]
