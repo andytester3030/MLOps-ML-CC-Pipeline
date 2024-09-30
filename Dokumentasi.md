@@ -13,5 +13,5 @@ Username dicoding: fdavidsen
 | Metrik evaluasi | Metrik yang digunakan untuk mengevaluasi model adalah Loss (training: 0.2848; testing: 0.9832) dan Binary Accuracy (training: 0.8620; testing: 0.7454) |
 | Performa model | Hasil evaluasi seperti Loss dan Binary Accuracy yang dicapai pada dataset evaluasi |
 | Opsi deployment | Model dapat dideploy menggunakan TFX Pusher ke direktori yang ditentukan, yang menyederhanakan proses deployment. Proses ini mendukung keberlanjutan dan kemudahan dalam pembaruan model |
-| Web app | Tidak dapat melakukan deployment karena Railway tidak mengizinkan code deployment (detail ada pada notebook.ipynb) |
-| Monitoring | Tidak dapat melakukan monitoring pada model serving |
+| Web app | Tautan web app yang digunakan untuk mengakses model serving. Contoh: [telco-customer-churn-model](https://8461-34-135-110-87.ngrok-free.app/v1/models/cc-model/metadata) |
+| Monitoring | Hasil monitoring dari model serving dapat dilihat pada [link ini](https://8461-34-135-110-87.ngrok-free.app/monitoring/prometheus/metrics) |

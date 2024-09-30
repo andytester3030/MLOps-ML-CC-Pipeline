@@ -6,7 +6,7 @@ from absl import logging
 from tfx.orchestration import metadata, pipeline
 from tfx.orchestration.beam.beam_dag_runner import BeamDagRunner
  
-PIPELINE_NAME = "customer-churn-pipeline"
+PIPELINE_NAME = "fdavidsen-pipeline"
  
 # pipeline inputs
 DATA_ROOT = "data"
