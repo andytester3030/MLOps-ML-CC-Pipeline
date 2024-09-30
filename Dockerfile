@@ -15,4 +15,6 @@ tensorflow_model_server --port=8500 --rest_api_port=${PORT:-8501} \
 "$@"' > /usr/bin/tf_serving_entrypoint.sh \
 && chmod +x /usr/bin/tf_serving_entrypoint.sh
 
+COPY ./tf_serving_entrypoint.sh /usr/bin/tf_serving_entrypoint.sh
+
 CMD ["/usr/bin/tf_serving_entrypoint.sh"]
