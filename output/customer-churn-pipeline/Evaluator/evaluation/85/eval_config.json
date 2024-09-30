@@ -1,0 +1,65 @@
+{
+  "evalConfig": {
+    "modelSpecs": [
+      {
+        "name": "candidate",
+        "labelKey": "Churn"
+      },
+      {
+        "name": "baseline",
+        "labelKey": "Churn",
+        "isBaseline": true
+      }
+    ],
+    "slicingSpecs": [
+      {},
+      {
+        "featureKeys": [
+          "gender",
+          "Partner"
+        ]
+      }
+    ],
+    "metricsSpecs": [
+      {
+        "metrics": [
+          {
+            "className": "AUC"
+          },
+          {
+            "className": "Precision"
+          },
+          {
+            "className": "Recall"
+          },
+          {
+            "className": "ExampleCount"
+          },
+          {
+            "className": "BinaryAccuracy",
+            "threshold": {
+              "valueThreshold": {
+                "lowerBound": 0.5
+              },
+              "changeThreshold": {
+                "absolute": 0.0001,
+                "direction": "HIGHER_IS_BETTER"
+              }
+            }
+          }
+        ],
+        "modelNames": [
+          "candidate",
+          "baseline"
+        ]
+      }
+    ]
+  },
+  "version": "0.46.0",
+  "dataLocation": "<user provided PCollection>",
+  "fileFormat": "<unknown>",
+  "modelLocations": {
+    "candidate": "/content/drive/MyDrive/Pengumpulan Tugas/MLOps ML CC Pipeline/output/customer-churn-pipeline/Trainer/model/84/Format-Serving",
+    "baseline": "/content/drive/MyDrive/Pengumpulan Tugas/MLOps ML CC Pipeline/output/customer-churn-pipeline/Trainer/model/75/Format-Serving"
+  }
+}
