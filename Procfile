@@ -1,1 +1,1 @@
-web: /usr/bin/tf_serving_entrypoint.sh
+web: /app/tf_serving_entrypoint.sh
