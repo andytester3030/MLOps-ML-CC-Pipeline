@@ -8,10 +8,6 @@ __pycache__/
 /output
 /test_
 
-# tfx components
-/pipelines
-/serving_model
-
 # Distribution / packaging
 .Python
 build/
